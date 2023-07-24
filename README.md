@@ -43,19 +43,19 @@ Let's start reading! Choose from various book categories or use the buttons belo
 4. Copy the `.env.example` file to `.env`
 5. Make sure to fill in the database information, such as database name, username, password and `FILESYSTEM_DISK=public` in the .env file.
    If in development enable `APP_DEBUG=true` and will enable the laravel debugbar
-       <pre>
-        APP_NAME="Digital Library"
-        APP_DEBUG=false
-         
-        DB_CONNECTION=mysql
-        DB_HOST=127.0.0.1
-        DB_PORT=3306
-        DB_DATABASE=digital_library
-        DB_USERNAME=root
-        DB_PASSWORD=
-       
-        FILESYSTEM_DISK=public
-       </pre>
+   <pre>
+    APP_NAME="Digital Library"
+    APP_DEBUG=false
+     
+    DB_CONNECTION=mysql
+    DB_HOST=127.0.0.1
+    DB_PORT=3306
+    DB_DATABASE=digital_library
+    DB_USERNAME=root
+    DB_PASSWORD=
+   
+    FILESYSTEM_DISK=public
+   </pre>
 
 6. Generate Key app
  <pre>php artisan key:generate</pre>
