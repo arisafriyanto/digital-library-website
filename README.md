@@ -35,34 +35,36 @@ Let's start reading! Choose from various book categories or use the buttons belo
 ## How to setup and run locally
 
 1. Clone repository with the following command
-    <pre>git clone https://github.com/arisafriyanto/digital-library-website.git</pre>
+ <pre>git clone https://github.com/arisafriyanto/digital-library-website.git</pre>
 2. Move to the repository directory with the command
-    <pre>cd digital-library-website/</pre>
+ <pre>cd digital-library-website/</pre>
 3. Run the following command to install the depedency
-    <pre>composer install</pre>
+ <pre>composer install</pre>
 4. Copy the `.env.example` file to `.env`
 5. Make sure to fill in the database information, such as database name, username, password and `FILESYSTEM_DISK=public` in the .env file.
    If in development enable `APP_DEBUG=true` and will enable the laravel debugbar
-    <pre>
-     APP_NAME="Digital Library"
-     APP_DEBUG=false
-      
-     DB_CONNECTION=mysql
-     DB_HOST=127.0.0.1
-     DB_PORT=3306
-     DB_DATABASE=digital_library
-     DB_USERNAME=root
-     DB_PASSWORD=
-    
-     FILESYSTEM_DISK=public
-     <pre>
+       <pre>
+        APP_NAME="Digital Library"
+        APP_DEBUG=false
+         
+        DB_CONNECTION=mysql
+        DB_HOST=127.0.0.1
+        DB_PORT=3306
+        DB_DATABASE=digital_library
+        DB_USERNAME=root
+        DB_PASSWORD=
+       
+        FILESYSTEM_DISK=public
+       </pre>
 
 6. Generate Key app
-    <pre>php artisan key:generate</pre>
-7. Migrate database
-    <pre>php artisan migrate --seed</pre>
-8. Run app
-    <pre>php artisan serve</pre>
+ <pre>php artisan key:generate</pre>
+7. Run this command to create a symbolic link
+ <pre>php artisan storage:link</pre>
+8. Migrate database
+ <pre>php artisan migrate --seed</pre>
+9. Run app
+ <pre>php artisan serve</pre>
 
 ## How do I login?
 
